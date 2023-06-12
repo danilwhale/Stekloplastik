@@ -82,6 +82,10 @@ public class Window : Panel
         {
             _offset = new Point(Location.X - Cursor.Position.X, Location.Y - Cursor.Position.Y);
             _canBeMoved = true;
+            if (Parent != null)
+            {
+                Parent.Controls.SetChildIndex(this, 0);
+            }
         };
         windowTitle.MouseUp += (_, _) => _canBeMoved = false;
         windowTitle.MouseMove += (_, _) => { if (_canBeMoved) Movew(); };

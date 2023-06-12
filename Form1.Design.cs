@@ -4,11 +4,14 @@ namespace Stekloplastik;
 
 public partial class Form1
 {
-    Panel taskbar = null!;
-    Button spusk = null!;
-    Label timeLabel = null!;
-    Timer timeLabelUpdater = null!;
-    StartMenuPanel startMenu = null!;
+    #nullable disable
+    Panel taskbar;
+    Button spusk;
+    Label timeLabel;
+    Timer timeLabelUpdater;
+    StartMenuPanel startMenu;
+    Desktop desktop;
+    #nullable enable
 
     private void InitializeComponent()
     {
@@ -67,13 +70,18 @@ public partial class Form1
             Location = new Point(0, 192)
         };
 
+        desktop = new Desktop()
+        {
+            Dock = DockStyle.Fill
+        };
+
         taskbar.Controls.AddRange(new Control[] 
         {
             spusk, timeLabel
         });
         Controls.AddRange(new Control[]
         {
-            taskbar, startMenu
+            taskbar, startMenu, desktop
         });
     }
 
