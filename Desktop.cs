@@ -4,11 +4,13 @@ namespace Stekloplastik;
 
 public sealed class Desktop : Panel
 {
+    public static Desktop MainDesktop { get; private set; } = null!;
     DesktopShortcut ourComputerShortcut;
     FlowLayoutPanel shortcuts;
 
     public Desktop()
     {
+        MainDesktop = this;
         shortcuts = new FlowLayoutPanel
         {
             Dock = DockStyle.Fill,
