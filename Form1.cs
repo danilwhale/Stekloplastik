@@ -9,11 +9,6 @@ public partial class Form1 : Form
         InitializeComponent();
 
         timeLabel.Text = DateTime.Now.ToShortTimeString();
-
-        var window = new Window("пр люди");
-        
-        Controls.Add(window);
-        window.ShowContent(new OurComputer());
     }
 
     private void UpdateTimeLabel(object? sender, EventArgs ev)
