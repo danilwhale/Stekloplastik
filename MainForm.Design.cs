@@ -2,7 +2,7 @@ using Timer = System.Windows.Forms.Timer;
 
 namespace Stekloplastik;
 
-public partial class Form1
+public partial class MainForm
 {
     #nullable disable
     Panel taskbar;

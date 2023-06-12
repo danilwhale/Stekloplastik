@@ -22,7 +22,7 @@ public class StartMenuPanel : Panel
             Size = new Size(Width - 80, 36),
 
             Font = new Font("Comic Sans MS", 14, FontStyle.Italic),
-            Text = "Администратор",
+            Text = "Administrator",
             TextAlign = ContentAlignment.MiddleLeft
         };
 
@@ -46,10 +46,10 @@ public class StartMenuPanel : Panel
             Size = new Size(224, 80),
             Font = new Font("Comic Sans MS", 15),
             ForeColor = Color.White,
-            Text = "у вас нету программ\nхдддд",
+            Text = "you don't have any apps\nxdddd",
         };
 
-        shutdownButton = Form1.CreateImageButton(
+        shutdownButton = MainForm.CreateImageButton(
             Resources.GetBitmap("shutdown.png"),
             Resources.GetBitmap("shutdown_hover.png"),
             Resources.GetBitmap("shutdown_pressed.png")

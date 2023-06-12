@@ -50,7 +50,7 @@ public class Window : Panel
             BackColor = Color.FromArgb(128, 153, 255)
         };
 
-        closeWindowButton = Form1.CreateImageButton(
+        closeWindowButton = MainForm.CreateImageButton(
             Resources.GetBitmap("close.png"),
             Resources.GetBitmap("close_h.png"),
             Resources.GetBitmap("close_p.png")

@@ -5,7 +5,7 @@ namespace Stekloplastik.Windows;
 public sealed class OurComputer : WindowContent
 {
     public override string Title => "Our Computer";
-    public override Bitmap? Icon => Resources.GetBitmap("nash_calculyator.png");
+    public override Bitmap? Icon => Resources.GetBitmap("our_computer.png");
 
     MenuStrip menuStrip;
     TextBox pathBox;
@@ -32,7 +32,7 @@ public sealed class OurComputer : WindowContent
             new ToolStripMenuItem("edit") { Enabled = false },
             new ToolStripMenuItem("what about pc"),
             homeMenuItem,
-            new ToolStripMenuItem(Resources.GetBitmap("steklopaketopitlogo.png")) { Alignment = ToolStripItemAlignment.Right }
+            new ToolStripMenuItem(Resources.GetBitmap("stekloplastiklogo.png")) { Alignment = ToolStripItemAlignment.Right }
         });
 
         pathBox = new TextBox

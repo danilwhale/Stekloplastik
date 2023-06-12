@@ -19,7 +19,7 @@ public sealed class Desktop : Panel
 
         ourComputerShortcut = new DesktopShortcut(
             "Our Computer",
-            Resources.GetBitmap("nash_calculyator.png")
+            Resources.GetBitmap("our_computer.png")
         );
         ourComputerShortcut.Activated += () =>
         {
