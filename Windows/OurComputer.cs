@@ -2,15 +2,20 @@ namespace Stekloplastik.Windows;
 
 public sealed class OurComputer : WindowContent
 {
-    Button button;
+    MenuStrip menuStrip;
 
     public OurComputer()
     {
-        button = new Button
+        menuStrip = new MenuStrip
         {
-            Size = new Size(200, 64),
-            Text = "пр люди"
+            Size = new Size(Width, 16)
         };
-        Controls.Add(button);
+        menuStrip.Items.AddRange(new ToolStripItem[]
+        {
+            new ToolStripMenuItem("file"),
+            new ToolStripMenuItem("edit") { Enabled = false }
+        });
+
+        Controls.Add(menuStrip);
     }
 }
