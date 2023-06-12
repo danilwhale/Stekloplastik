@@ -12,8 +12,8 @@ Just Another Windows Parody(TM)
 ## [==-----------------------------] <br/>
 * ~~Create taskbar & start menu~~
 * ~~Create basic window management~~
-* Rewrite 'Our Computer'
-* Bring "**Re**al **FS**"
+* ~~Rewrite 'Our Computer'~~
+* ~~Bring "**Re**al **FS**"~~
 * Refactor resource names
 * Rewrite 'Ishak' (maybe will be renamed into something else)
 * Port all "Internet" payloads
