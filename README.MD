@@ -8,7 +8,7 @@ You can check out OG project [here](https://github.com/localwhale20/Stekloplasti
 ## Description
 Just Another Windows Parody(TM)
 
-## Progress                        |
+## Progress
 ## [===================------------] <br/>
 * ~~Create taskbar & start menu~~
 * ~~Create basic window management~~
