@@ -23,8 +23,15 @@ public sealed class OurComputer : WindowContent
             Size = new Size(Width, 16)
         };
 
-        ToolStripMenuItem homeMenuItem = new ToolStripMenuItem("home");
+        ToolStripMenuItem homeMenuItem = new("home");
         homeMenuItem.Click += (_, _) => OpenFolder(new MainPage());
+
+        ToolStripMenuItem whatAboutPcItem = new("what about pc");
+        whatAboutPcItem.Click += (_, _) =>
+        {
+            var window = new Window(new WhatAboutComputer());
+            window.Show();
+        };
 
         menuStrip.Items.AddRange(new ToolStripItem[]
         {
