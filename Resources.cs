@@ -2,10 +2,11 @@ namespace Stekloplastik;
 
 public static class Resources
 {
+    public const string AppResourcesPath = "Stekloplastik.Resources.";
     public static Bitmap GetBitmap(string name)
     {
         var asm = typeof(Resources).Assembly;
-        var stream = asm.GetManifestResourceStream("Winforms.Resources." + name);
+        var stream = asm.GetManifestResourceStream(AppResourcesPath + name);
 
         if (stream != null)
         {
@@ -18,7 +19,7 @@ public static class Resources
     public static Cursor GetCursor(string name)
     {
         var asm = typeof(Resources).Assembly;
-        var stream = asm.GetManifestResourceStream("Winforms.Resources." + name);
+        var stream = asm.GetManifestResourceStream(AppResourcesPath + name);
 
         if (stream != null)
         {
@@ -31,7 +32,7 @@ public static class Resources
     public static Icon GetIcon(string name)
     {
         var asm = typeof(Resources).Assembly;
-        var stream = asm.GetManifestResourceStream("Winforms.Resources." + name);
+        var stream = asm.GetManifestResourceStream(AppResourcesPath + name);
 
         if (stream != null)
         {

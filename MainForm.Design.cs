@@ -38,9 +38,9 @@ public sealed partial class MainForm
         };
 
         spusk = CreateImageButton(
-            Resources.GetBitmap("spusk.png"), 
-            Resources.GetBitmap("spusk_hover.png"), 
-            Resources.GetBitmap("spusk_pressed.png")
+            Resources.GetBitmap("begin.png"), 
+            Resources.GetBitmap("begin_hover.png"), 
+            Resources.GetBitmap("begin_pressed.png")
         );
         spusk.Dock = DockStyle.Left;
         spusk.Size = new Size(88, 32);
