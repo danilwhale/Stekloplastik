@@ -1,6 +1,6 @@
 namespace Stekloplastik;
 
-public class Window : Panel
+public sealed class Window : Panel
 {
     private string _Title;
     public string Title
@@ -27,11 +27,11 @@ public class Window : Panel
     }
     public bool AllowClose { get; set; }
 
-    private Panel topping;
-    private Button closeWindowButton;
-    private Label windowTitle;
-    private PictureBox windowIcon;
-    private Panel _content;
+    private readonly Panel topping;
+    private readonly Button closeWindowButton;
+    private readonly Label windowTitle;
+    private readonly PictureBox windowIcon;
+    private readonly Panel _content;
 
     private bool _canBeMoved = false;
     private Point _offset = Point.Empty;

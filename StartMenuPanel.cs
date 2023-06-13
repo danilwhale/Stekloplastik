@@ -1,12 +1,12 @@
 namespace Stekloplastik;
 
-public class StartMenuPanel : Panel
+public sealed class StartMenuPanel : Panel
 {
-    Label usernameLabel;
-    Button shutdownButton;
-    PictureBox adminImage;
-    Panel appsPanel;
-    Label noAppsLabel;
+    readonly Label usernameLabel;
+    readonly Button shutdownButton;
+    readonly PictureBox adminImage;
+    readonly Panel appsPanel;
+    readonly Label noAppsLabel;
 
     public StartMenuPanel()
     {

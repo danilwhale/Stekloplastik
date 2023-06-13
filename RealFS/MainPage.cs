@@ -1,6 +1,6 @@
 namespace Stekloplastik.RealFS;
 
-public class MainPage : Folder
+public sealed class MainPage : Folder
 {
     public override string? Path => "urpc/";
     public MainPage() 

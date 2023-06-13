@@ -2,7 +2,7 @@ using Stekloplastik.Windows;
 
 namespace Stekloplastik;
 
-public partial class MainForm : Form
+public sealed partial class MainForm : Form
 {
     public MainForm()
     {

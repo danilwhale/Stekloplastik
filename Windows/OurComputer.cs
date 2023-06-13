@@ -7,14 +7,14 @@ public sealed class OurComputer : WindowContent
     public override string Title => "Our Computer";
     public override Bitmap? Icon => Resources.GetBitmap("our_computer.png");
 
-    MenuStrip menuStrip;
-    TextBox pathBox;
-    ListView folderListView;
+    readonly MenuStrip menuStrip;
+    readonly TextBox pathBox;
+    readonly ListView folderListView;
 
     Folder? higherFolder;
     Folder currentFolder = null!;
-    List<Folder> _cachedFolders = new List<Folder>();
-    List<RealFS.File> _cachedFiles = new List<RealFS.File>();
+    readonly List<Folder> _cachedFolders = new List<Folder>();
+    readonly List<RealFS.File> _cachedFiles = new List<RealFS.File>();
 
     public OurComputer()
     {
